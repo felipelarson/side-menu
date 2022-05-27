@@ -27,6 +27,7 @@ ul li {
   padding: 15px;
   z-index: var(--i);
   transition: 0.5s;
+  margin: 1rem;
 }
 ul li:hover {
   background: #33a3ee;
