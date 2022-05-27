@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700')
+
+$black: #000
+$light-dark: #434750
+$dark: #3e3f46
+$darkness: #2e3133
+$medium-dark: #35383e
+$gray: #999
+$white: #fff
+$blue: #33a3ee
+$dark-blue: #1f5378
+$medium-blue: #2982b9
+$red: #d00
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Oswald', sans-serif
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  background: $light-dark
+
+ul
+  position: relative
+  transform: skewY(-15deg)
+  transition: 0.5s
+
+  li
+    position: relative
+    list-style: none
+    width: 200px
+    background: $dark
+    padding: 15px
+    z-index: var(--i)
+    transition: 0.5s
+
+    &:hover
+      background: $blue
+      transform: translateX(50px)
+
+    &:hover a
+      color: $white
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: -40px
+      width: 40px
+      height: 100%
+      background: $darkness
+      transform-origin: right
+      transform: skewY(45deg)
+      transition: 0.5s
+    
+    &:hover::before
+      background: $dark-blue
+    
+    &::after
+      content: ''
+      position: absolute
+      top: -40px
+      left: 0
+      width: 100%
+      height: 40px
+      background: $medium-dark
+      transform-origin: bottom
+      transform: skewX(45deg)
+      transition: 0.5s
+    
+    &:hover::after
+      background: $medium-blue
+    
+    &:last-child::after
+      box-shadow: -120px 120px 20px rgba($black, 0.25)
+
+    a
+      text-decoration: none
+      color: $gray
+      display: block
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      transition: 0.5s
