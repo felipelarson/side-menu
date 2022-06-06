@@ -6,4 +6,3 @@
 
 - HTML
 - SASS
-- JS
