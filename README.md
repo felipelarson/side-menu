@@ -6,3 +6,7 @@
 
 - HTML
 - SASS
+
+**made :heart: by [Felipe Silveira](https://github.com/felipelarson)**
+
+<h6>credit: inspired by the channel video @Online Tutorials</h6>
